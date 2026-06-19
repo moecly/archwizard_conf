@@ -697,6 +697,32 @@ kind = "bin"
 source = "/usr/bin/mutagen"
 
 # ═════════════════════════════════════════════
+# Container: guest (访客应用)
+# ═════════════════════════════════════════════
+
+[[packages]]
+name = "wechat-bin"
+description = "从 guest 容器导出的微信桌面应用。"
+method = "container"
+container = "guest"
+package_manager = "paru"
+
+[[packages.exports]]
+kind = "app"
+source = "/usr/share/applications/wechat.desktop"
+
+[[packages]]
+name = "chromium"
+description = "从 guest 容器导出的 Chromium 浏览器。"
+method = "container"
+container = "guest"
+package_manager = "paru"
+
+[[packages.exports]]
+kind = "app"
+source = "/usr/share/applications/chromium.desktop"
+
+# ═════════════════════════════════════════════
 # Container: fedora (桌面应用)
 # ═════════════════════════════════════════════
 

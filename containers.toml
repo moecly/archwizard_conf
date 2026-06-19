@@ -11,3 +11,9 @@ image = "registry.fedoraproject.org/fedora:latest"
 package_managers = ["dnf"]
 home = "~/.archwizard/distrobox/homes/fedora"
 mirror = "china"
+[[containers]]
+name = "guest"
+image = "docker.io/library/archlinux:latest"
+package_managers = ["pacman", "paru"]
+home = "~/.archwizard/distrobox/homes/guest"
+mirror = "china"

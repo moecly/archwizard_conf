@@ -5,10 +5,12 @@ url = "git@github.com:moecly/tmux-config.git"
 [[repos.links]]
 source = ".tmux.conf"
 target = "~/.tmux.conf"
+scope = "user"
 
 [[repos.links]]
 source = ".tmux.conf.local"
 target = "~/.tmux.conf.local"
+scope = "user"
 
 [[repos]]
 name = "zsh"
@@ -17,6 +19,7 @@ url = "git@github.com:moecly/zsh-config.git"
 [[repos.links]]
 source = ".zshrc"
 target = "~/.zshrc"
+scope = "user"
 
 [[repos]]
 name = "nvim"
@@ -25,6 +28,7 @@ url = "git@github.com:moecly/nvim-config.git"
 [[repos.links]]
 source = "."
 target = "~/.config/nvim"
+scope = "user"
 
 [[repos]]
 name = "alacritty"
@@ -33,6 +37,7 @@ url = "git@github.com:moecly/alacritty-config.git"
 [[repos.links]]
 source = "."
 target = "~/.config/alacritty"
+scope = "user"
 
 [[repos]]
 name = "keyd"
@@ -41,6 +46,7 @@ url = "git@github.com:moecly/keyd-config.git"
 [[repos.links]]
 source = "."
 target = "/etc/keyd"
+scope = "system"
 
 [[repos]]
 name = "niri"
@@ -49,6 +55,7 @@ url = "git@github.com:moecly/niri-config.git"
 [[repos.links]]
 source = "."
 target = "~/.config/niri"
+scope = "user"
 
 [[repos]]
 name = "kitty"
@@ -57,6 +64,7 @@ url = "git@github.com:moecly/kitty-config.git"
 [[repos.links]]
 source = "."
 target = "~/.config/kitty"
+scope = "user"
 
 [[repos]]
 name = "swaylock"
@@ -65,6 +73,7 @@ url = "git@github.com:moecly/swaylock-config.git"
 [[repos.links]]
 source = "."
 target = "~/.config/swaylock"
+scope = "user"
 
 [[repos]]
 name = "fuzzel"
@@ -73,6 +82,7 @@ url = "git@github.com:moecly/fuzzel-config.git"
 [[repos.links]]
 source = "."
 target = "~/.config/fuzzel"
+scope = "user"
 
 [[repos]]
 name = "fontconfig"
@@ -81,6 +91,7 @@ url = "git@github.com:moecly/fontconfig-config.git"
 [[repos.links]]
 source = "."
 target = "~/.config/fontconfig"
+scope = "user"
 
 [[repos]]
 name = "wlogout"
@@ -89,6 +100,7 @@ url = "git@github.com:moecly/wlogout-config.git"
 [[repos.links]]
 source = "."
 target = "~/.config/wlogout"
+scope = "user"
 
 [[repos]]
 name = "DankMaterialShell"
@@ -97,3 +109,4 @@ url = "git@github.com:moecly/dms-shell-config.git"
 [[repos.links]]
 source = "."
 target = "~/.config/DankMaterialShell"
+scope = "user"

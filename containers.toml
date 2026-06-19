@@ -1,13 +1,13 @@
 [[containers]]
-name = "arch-dev"
+name = "arch-personal"
 image = "docker.io/library/archlinux:latest"
 package_managers = ["pacman", "paru"]
-home = "~/.archwizard/distrobox/homes/arch-dev"
+home = "~/.archwizard/distrobox/homes/arch-personal"
 mirror = "china"
 
 [[containers]]
-name = "fedora-dev"
+name = "fedora-desktop"
 image = "registry.fedoraproject.org/fedora:latest"
 package_managers = ["dnf"]
-home = "~/.archwizard/distrobox/homes/fedora-dev"
+home = "~/.archwizard/distrobox/homes/fedora-desktop"
 mirror = "china"

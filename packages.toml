@@ -45,68 +45,6 @@ method = "pacman"
 name = "zoxide"
 method = "pacman"
 
-# ─ tui ──────────────────────────────────────
-[[packages]]
-name = "lazygit"
-method = "pacman"
-
-[[packages]]
-name = "systemctl-tui"
-method = "paru"
-
-[[packages]]
-name = "yazi"
-method = "pacman"
-
-[[packages]]
-name = "lazydocker"
-method = "paru"
-
-# ─ pkg ──────────────────────────────────────
-[[packages]]
-name = "npm"
-method = "pacman"
-
-[[packages]]
-name = "nodejs"
-method = "pacman"
-
-[[packages]]
-name = "python"
-method = "pacman"
-
-[[packages]]
-name = "python-pip"
-method = "pacman"
-
-[[packages]]
-name = "python-pipx"
-method = "pacman"
-
-[[packages]]
-name = "gcc"
-method = "pacman"
-
-[[packages]]
-name = "paru"
-method = "paru"
-
-[[packages]]
-name = "crun"
-method = "pacman"
-
-[[packages]]
-name = "podman"
-method = "pacman"
-
-[[packages]]
-name = "podman-compose"
-method = "pacman"
-
-[[packages]]
-name = "distrobox"
-method = "pacman"
-
 # ─ wayland ──────────────────────────────────
 [[packages]]
 name = "niri"
@@ -280,15 +218,7 @@ name = "sshfs"
 method = "pacman"
 
 [[packages]]
-name = "chromium"
-method = "pacman"
-
-[[packages]]
 name = "flclash-bin"
-method = "paru"
-
-[[packages]]
-name = "localsend-bin"
 method = "paru"
 
 [[packages]]
@@ -356,39 +286,169 @@ method = "pacman"
 name = "compsize"
 method = "pacman"
 
-# ─ productivity ────────────────────────────
+# ─ container infra ──────────────────────────
 [[packages]]
-name = "mpv"
+name = "paru"
+method = "paru"
+
+[[packages]]
+name = "crun"
 method = "pacman"
 
 [[packages]]
-name = "keepassxc"
+name = "podman"
 method = "pacman"
 
 [[packages]]
-name = "obs-studio"
+name = "podman-compose"
 method = "pacman"
 
-# ─ other ────────────────────────────────────
+[[packages]]
+name = "distrobox"
+method = "pacman"
+
+# ═════════════════════════════════════════════
+# Container: arch-personal (AUR + 开发链)
+# ═════════════════════════════════════════════
+
+[[packages]]
+name = "lazygit"
+method = "container"
+container = "arch-personal"
+package_manager = "pacman"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/lazygit"
+
+[[packages]]
+name = "systemctl-tui"
+method = "container"
+container = "arch-personal"
+package_manager = "paru"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/systemctl-tui"
+
+[[packages]]
+name = "yazi"
+method = "container"
+container = "arch-personal"
+package_manager = "pacman"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/yazi"
+
+[[packages]]
+name = "lazydocker"
+method = "container"
+container = "arch-personal"
+package_manager = "paru"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/lazydocker"
+
+[[packages]]
+name = "nodejs"
+method = "container"
+container = "arch-personal"
+package_manager = "pacman"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/node"
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/npm"
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/npx"
+
+[[packages]]
+name = "python"
+method = "container"
+container = "arch-personal"
+package_manager = "pacman"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/python3"
+
+[[packages]]
+name = "python-pip"
+method = "container"
+container = "arch-personal"
+package_manager = "pacman"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/pip"
+
+[[packages]]
+name = "python-pipx"
+method = "container"
+container = "arch-personal"
+package_manager = "pacman"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/pipx"
+
+[[packages]]
+name = "gcc"
+method = "container"
+container = "arch-personal"
+package_manager = "pacman"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/gcc"
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/g++"
+
+[[packages]]
+name = "localsend-bin"
+method = "container"
+container = "arch-personal"
+package_manager = "paru"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/localsend"
+
 [[packages]]
 name = "opencode"
-method = "pacman"
+method = "container"
+container = "arch-personal"
+package_manager = "pacman"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/opencode"
 
 [[packages]]
 name = "claude-code"
-method = "paru"
+method = "container"
+container = "arch-personal"
+package_manager = "paru"
 
-# ─ container apps ──────────────────────────
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/claude"
+
 [[packages]]
 name = "chromium"
 method = "container"
-container = "arch-dev"
+container = "arch-personal"
 package_manager = "paru"
 
 [[packages.exports]]
 kind = "app"
 source = "/usr/share/applications/chromium.desktop"
-
 [[packages.exports]]
 kind = "bin"
 source = "/usr/bin/chromium"
@@ -396,26 +456,58 @@ source = "/usr/bin/chromium"
 [[packages]]
 name = "cc-switch-bin"
 method = "container"
-container = "arch-dev"
+container = "arch-personal"
 package_manager = "paru"
+
+# ═════════════════════════════════════════════
+# Container: fedora-desktop (稳定桌面应用)
+# ═════════════════════════════════════════════
 
 [[packages]]
 name = "chromium"
 method = "container"
-container = "fedora-dev"
+container = "fedora-desktop"
 package_manager = "dnf"
 
 [[packages.exports]]
 kind = "app"
 source = "/usr/share/applications/chromium-browser.desktop"
-
 [[packages.exports]]
 kind = "bin"
 source = "/usr/bin/chromium-browser"
 
-# ─ distrobox 示例 ──────────────────────────
-#[[packages]]
-#name = "nodejs"
-#method = "distrobox"
-#container = "ubuntu"
-#package_manager = "apt"
+[[packages]]
+name = "mpv"
+method = "container"
+container = "fedora-desktop"
+package_manager = "dnf"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/mpv"
+
+[[packages]]
+name = "keepassxc"
+method = "container"
+container = "fedora-desktop"
+package_manager = "dnf"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/keepassxc"
+[[packages.exports]]
+kind = "app"
+source = "/usr/share/applications/org.keepassxc.KeePassXC.desktop"
+
+[[packages]]
+name = "obs-studio"
+method = "container"
+container = "fedora-desktop"
+package_manager = "dnf"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/obs"
+[[packages.exports]]
+kind = "app"
+source = "/usr/share/applications/com.obsproject.Studio.desktop"

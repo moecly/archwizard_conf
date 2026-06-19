@@ -1,0 +1,66 @@
+[[services]]
+name = "keyd.service"
+action = "enable-start"
+
+[[services]]
+name = "dms.service"
+action = "enable-start"
+scope = "user"
+
+[[services]]
+name = "ufw.service"
+action = "enable-start"
+
+[[services]]
+name = "tuned.service"
+action = "enable-start"
+
+[[services]]
+name = "sshd.service"
+action = "enable-start"
+
+[[services]]
+name = "NetworkManager.service"
+action = "enable-start"
+
+[[services]]
+name = "systemd-timesyncd.service"
+action = "enable-start"
+
+[[services]]
+name = "snapper-timeline.timer"
+action = "enable-start"
+
+[[services]]
+name = "snapper-cleanup.timer"
+action = "enable-start"
+
+[[services]]
+name = "btrfs-scrub.timer"
+action = "enable-start"
+
+[[services]]
+name = "btrfs-balance.timer"
+action = "enable-start"
+
+[[services]]
+name = "cronie.service"
+action = "enable-start"
+
+[[services]]
+name = "udisks2.service"
+action = "enable-start"
+
+[[services]]
+name = "tailscaled.service"
+action = "enable-start"
+
+[[services]]
+name = "syncthing.service"
+action = "enable-start"
+scope = "user"
+
+[[services]]
+name = "podman.socket"
+action = "enable-start"
+scope = "user"

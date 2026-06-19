@@ -1,0 +1,95 @@
+[[repos]]
+name = "tmux"
+url = "https://github.com/moecly/tmux-config.git"
+
+[[repos.links]]
+source = "."
+target = "~/.tmux"
+
+[[repos]]
+name = "zsh"
+url = "https://github.com/moecly/zsh-config.git"
+
+[[repos.links]]
+source = "."
+target = "~/.zsh"
+
+[[repos]]
+name = "nvim"
+url = "https://github.com/moecly/nvim-config.git"
+
+[[repos.links]]
+source = "."
+target = "~/.config/nvim"
+
+[[repos]]
+name = "alacritty"
+url = "https://github.com/moecly/alacritty-config.git"
+
+[[repos.links]]
+source = "."
+target = "~/.config/alacritty"
+
+[[repos]]
+name = "keyd"
+url = "https://github.com/moecly/keyd-config.git"
+
+[[repos.links]]
+source = "."
+target = "~/.config/keyd"
+
+[[repos]]
+name = "niri"
+url = "https://github.com/moecly/niri-config.git"
+
+[[repos.links]]
+source = "."
+target = "~/.config/niri"
+
+[[repos]]
+name = "kitty"
+url = "https://github.com/moecly/kitty-config.git"
+
+[[repos.links]]
+source = "."
+target = "~/.config/kitty"
+
+[[repos]]
+name = "swaylock"
+url = "https://github.com/moecly/swaylock-config.git"
+
+[[repos.links]]
+source = "."
+target = "~/.config/swaylock"
+
+[[repos]]
+name = "fuzzel"
+url = "https://github.com/moecly/fuzzel-config.git"
+
+[[repos.links]]
+source = "."
+target = "~/.config/fuzzel"
+
+[[repos]]
+name = "fontconfig"
+url = "https://github.com/moecly/fontconfig-config.git"
+
+[[repos.links]]
+source = "."
+target = "~/.config/fontconfig"
+
+[[repos]]
+name = "wlogout"
+url = "https://github.com/moecly/wlogout-config.git"
+
+[[repos.links]]
+source = "."
+target = "~/.config/wlogout"
+
+[[repos]]
+name = "DankMaterialShell"
+url = "https://github.com/moecly/dms-shell-config.git"
+
+[[repos.links]]
+source = "."
+target = "~/.config/DankMaterialShell"

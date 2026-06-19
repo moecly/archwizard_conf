@@ -1,0 +1,421 @@
+# ─ base ─────────────────────────────────────
+[[packages]]
+name = "git"
+method = "pacman"
+
+[[packages]]
+name = "fd"
+method = "pacman"
+
+[[packages]]
+name = "ripgrep"
+method = "pacman"
+
+[[packages]]
+name = "fzf"
+method = "pacman"
+
+# ─ shell ────────────────────────────────────
+[[packages]]
+name = "zsh"
+method = "pacman"
+
+[[packages]]
+name = "tmux"
+method = "pacman"
+
+[[packages]]
+name = "neovim"
+method = "pacman"
+
+[[packages]]
+name = "direnv"
+method = "pacman"
+
+# ─ file ─────────────────────────────────────
+[[packages]]
+name = "eza"
+method = "pacman"
+
+[[packages]]
+name = "trash-cli"
+method = "pacman"
+
+[[packages]]
+name = "zoxide"
+method = "pacman"
+
+# ─ tui ──────────────────────────────────────
+[[packages]]
+name = "lazygit"
+method = "pacman"
+
+[[packages]]
+name = "systemctl-tui"
+method = "paru"
+
+[[packages]]
+name = "yazi"
+method = "pacman"
+
+[[packages]]
+name = "lazydocker"
+method = "paru"
+
+# ─ pkg ──────────────────────────────────────
+[[packages]]
+name = "npm"
+method = "pacman"
+
+[[packages]]
+name = "nodejs"
+method = "pacman"
+
+[[packages]]
+name = "python"
+method = "pacman"
+
+[[packages]]
+name = "python-pip"
+method = "pacman"
+
+[[packages]]
+name = "python-pipx"
+method = "pacman"
+
+[[packages]]
+name = "gcc"
+method = "pacman"
+
+[[packages]]
+name = "paru"
+method = "paru"
+
+[[packages]]
+name = "crun"
+method = "pacman"
+
+[[packages]]
+name = "podman"
+method = "pacman"
+
+[[packages]]
+name = "podman-compose"
+method = "pacman"
+
+[[packages]]
+name = "distrobox"
+method = "pacman"
+
+# ─ wayland ──────────────────────────────────
+[[packages]]
+name = "niri"
+method = "pacman"
+
+[[packages]]
+name = "fuzzel"
+method = "pacman"
+
+[[packages]]
+name = "kitty"
+method = "pacman"
+
+[[packages]]
+name = "xwayland-satellite"
+method = "paru"
+
+[[packages]]
+name = "wlogout"
+method = "paru"
+
+[[packages]]
+name = "dms-shell-niri"
+method = "pacman"
+
+[[packages]]
+name = "imv"
+method = "pacman"
+
+[[packages]]
+name = "grim"
+method = "pacman"
+
+[[packages]]
+name = "slurp"
+method = "pacman"
+
+[[packages]]
+name = "satty"
+method = "pacman"
+
+[[packages]]
+name = "wl-clipboard"
+method = "pacman"
+
+[[packages]]
+name = "cliphist"
+method = "pacman"
+
+# ─ input/字体 ───────────────────────────────
+[[packages]]
+name = "fcitx5"
+method = "pacman"
+
+[[packages]]
+name = "fcitx5-qt"
+method = "pacman"
+
+[[packages]]
+name = "fcitx5-gtk"
+method = "pacman"
+
+[[packages]]
+name = "fcitx5-configtool"
+method = "pacman"
+
+[[packages]]
+name = "fcitx5-chinese-addons"
+method = "pacman"
+
+[[packages]]
+name = "noto-fonts-cjk"
+method = "pacman"
+
+[[packages]]
+name = "noto-fonts-emoji"
+method = "pacman"
+
+# ─ cli ──────────────────────────────────────
+[[packages]]
+name = "git-delta"
+method = "pacman"
+
+[[packages]]
+name = "procs"
+method = "pacman"
+
+[[packages]]
+name = "xh"
+method = "pacman"
+
+[[packages]]
+name = "gping"
+method = "pacman"
+
+[[packages]]
+name = "btop"
+method = "pacman"
+
+[[packages]]
+name = "dust"
+method = "pacman"
+
+[[packages]]
+name = "duf"
+method = "pacman"
+
+[[packages]]
+name = "bat"
+method = "pacman"
+
+[[packages]]
+name = "ouch"
+method = "pacman"
+
+[[packages]]
+name = "tldr"
+method = "pacman"
+
+[[packages]]
+name = "ncdu"
+method = "pacman"
+
+[[packages]]
+name = "plocate"
+method = "pacman"
+
+[[packages]]
+name = "cava"
+method = "pacman"
+
+[[packages]]
+name = "progress"
+method = "pacman"
+
+[[packages]]
+name = "pv"
+method = "pacman"
+
+[[packages]]
+name = "rsync"
+method = "pacman"
+
+[[packages]]
+name = "fastfetch"
+method = "pacman"
+
+[[packages]]
+name = "jq"
+method = "pacman"
+
+[[packages]]
+name = "chafa"
+method = "pacman"
+
+[[packages]]
+name = "cyme"
+method = "pacman"
+
+[[packages]]
+name = "just"
+method = "pacman"
+
+# ─ net ──────────────────────────────────────
+[[packages]]
+name = "openssh"
+method = "pacman"
+
+[[packages]]
+name = "sshfs"
+method = "pacman"
+
+[[packages]]
+name = "chromium"
+method = "pacman"
+
+[[packages]]
+name = "flclash-bin"
+method = "paru"
+
+[[packages]]
+name = "localsend-bin"
+method = "paru"
+
+[[packages]]
+name = "ufw"
+method = "pacman"
+
+[[packages]]
+name = "tailscale"
+method = "pacman"
+
+[[packages]]
+name = "tuned"
+method = "pacman"
+
+[[packages]]
+name = "syncthing"
+method = "pacman"
+
+[[packages]]
+name = "rclone"
+method = "pacman"
+
+[[packages]]
+name = "reflector"
+method = "pacman"
+
+# ─ system ───────────────────────────────────
+[[packages]]
+name = "timeshift"
+method = "pacman"
+
+[[packages]]
+name = "snapper"
+method = "pacman"
+
+[[packages]]
+name = "snap-pac"
+method = "pacman"
+
+[[packages]]
+name = "ntfs-3g"
+method = "pacman"
+
+[[packages]]
+name = "udiskie"
+method = "pacman"
+
+[[packages]]
+name = "keyd"
+method = "pacman"
+
+[[packages]]
+name = "cryptsetup"
+method = "pacman"
+
+[[packages]]
+name = "cryptomator-bin"
+method = "paru"
+
+[[packages]]
+name = "btrfs-assistant"
+method = "pacman"
+
+[[packages]]
+name = "compsize"
+method = "pacman"
+
+# ─ productivity ────────────────────────────
+[[packages]]
+name = "mpv"
+method = "pacman"
+
+[[packages]]
+name = "keepassxc"
+method = "pacman"
+
+[[packages]]
+name = "obs-studio"
+method = "pacman"
+
+# ─ other ────────────────────────────────────
+[[packages]]
+name = "opencode"
+method = "pacman"
+
+[[packages]]
+name = "claude-code"
+method = "paru"
+
+# ─ container apps ──────────────────────────
+[[packages]]
+name = "chromium"
+method = "container"
+container = "arch-dev"
+package_manager = "paru"
+
+[[packages.exports]]
+kind = "app"
+source = "/usr/share/applications/chromium.desktop"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/chromium"
+
+[[packages]]
+name = "cc-switch-bin"
+method = "container"
+container = "arch-dev"
+package_manager = "paru"
+
+[[packages]]
+name = "chromium"
+method = "container"
+container = "fedora-dev"
+package_manager = "dnf"
+
+[[packages.exports]]
+kind = "app"
+source = "/usr/share/applications/chromium-browser.desktop"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/chromium-browser"
+
+# ─ distrobox 示例 ──────────────────────────
+#[[packages]]
+#name = "nodejs"
+#method = "distrobox"
+#container = "ubuntu"
+#package_manager = "apt"

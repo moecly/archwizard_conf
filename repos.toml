@@ -3,16 +3,20 @@ name = "tmux"
 url = "https://github.com/moecly/tmux-config.git"
 
 [[repos.links]]
-source = "."
-target = "~/.tmux"
+source = ".tmux.conf"
+target = "~/.tmux.conf"
+
+[[repos.links]]
+source = ".tmux.conf.local"
+target = "~/.tmux.conf.local"
 
 [[repos]]
 name = "zsh"
 url = "https://github.com/moecly/zsh-config.git"
 
 [[repos.links]]
-source = "."
-target = "~/.zsh"
+source = ".zshrc"
+target = "~/.zshrc"
 
 [[repos]]
 name = "nvim"
@@ -36,7 +40,7 @@ url = "https://github.com/moecly/keyd-config.git"
 
 [[repos.links]]
 source = "."
-target = "~/.config/keyd"
+target = "/etc/keyd"
 
 [[repos]]
 name = "niri"

@@ -468,6 +468,9 @@ package_manager = "paru"
 [[packages.exports]]
 kind = "bin"
 source = "/usr/bin/localsend"
+[[packages.exports]]
+kind = "app"
+source = "/usr/share/applications/localsend.desktop"
 
 [[packages]]
 name = "opencode"

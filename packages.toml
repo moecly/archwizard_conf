@@ -696,6 +696,18 @@ package_manager = "paru"
 kind = "bin"
 source = "/usr/bin/mutagen"
 
+[[packages]]
+name = "hermes-agent"
+description = "从 Arch 容器导出的本地 AI agent，支持工具使用和网页浏览。"
+method = "container"
+container = "arch"
+package_manager = "paru"
+version = "0.16.0-1"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/hermes"
+
 # ═════════════════════════════════════════════
 # Container: guest (访客应用)
 # ═════════════════════════════════════════════

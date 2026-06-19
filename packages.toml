@@ -25,11 +25,35 @@ name = "tmux"
 method = "pacman"
 
 [[packages]]
-name = "neovim"
+name = "direnv"
 method = "pacman"
 
 [[packages]]
-name = "direnv"
+name = "nvim"
+method = "pacman"
+
+[[packages]]
+name = "python"
+method = "pacman"
+
+[[packages]]
+name = "gcc"
+method = "pacman"
+
+[[packages]]
+name = "nodejs"
+method = "pacman"
+
+[[packages]]
+name = "npm"
+method = "pacman"
+
+[[packages]]
+name = "python-pip"
+method = "pacman"
+
+[[packages]]
+name = "python-pipx"
 method = "pacman"
 
 # ─ file ─────────────────────────────────────
@@ -94,6 +118,18 @@ method = "pacman"
 name = "cliphist"
 method = "pacman"
 
+[[packages]]
+name = "mpv"
+method = "pacman"
+
+[[packages]]
+name = "obs-studio"
+method = "pacman"
+
+[[packages]]
+name = "archlinux-wallpaper"
+method = "pacman"
+
 # ─ input/字体 ───────────────────────────────
 [[packages]]
 name = "fcitx5"
@@ -123,17 +159,57 @@ method = "pacman"
 name = "noto-fonts-emoji"
 method = "pacman"
 
+[[packages]]
+name = "ttf-0xproto-nerd"
+method = "pacman"
+
 # ─ cli ──────────────────────────────────────
+[[packages]]
+name = "bat"
+method = "pacman"
+
 [[packages]]
 name = "git-delta"
 method = "pacman"
 
 [[packages]]
-name = "procs"
+name = "jq"
+method = "pacman"
+
+[[packages]]
+name = "just"
+method = "pacman"
+
+[[packages]]
+name = "ouch"
+method = "pacman"
+
+[[packages]]
+name = "imagemagick"
+method = "pacman"
+
+[[packages]]
+name = "yazi"
 method = "pacman"
 
 [[packages]]
 name = "xh"
+method = "pacman"
+
+[[packages]]
+name = "tldr"
+method = "pacman"
+
+[[packages]]
+name = "chafa"
+method = "pacman"
+
+[[packages]]
+name = "pv"
+method = "pacman"
+
+[[packages]]
+name = "procs"
 method = "pacman"
 
 [[packages]]
@@ -153,18 +229,6 @@ name = "duf"
 method = "pacman"
 
 [[packages]]
-name = "bat"
-method = "pacman"
-
-[[packages]]
-name = "ouch"
-method = "pacman"
-
-[[packages]]
-name = "tldr"
-method = "pacman"
-
-[[packages]]
 name = "ncdu"
 method = "pacman"
 
@@ -181,10 +245,6 @@ name = "progress"
 method = "pacman"
 
 [[packages]]
-name = "pv"
-method = "pacman"
-
-[[packages]]
 name = "rsync"
 method = "pacman"
 
@@ -193,19 +253,31 @@ name = "fastfetch"
 method = "pacman"
 
 [[packages]]
-name = "jq"
-method = "pacman"
-
-[[packages]]
-name = "chafa"
-method = "pacman"
-
-[[packages]]
 name = "cyme"
 method = "pacman"
 
 [[packages]]
-name = "just"
+name = "feh"
+method = "pacman"
+
+[[packages]]
+name = "lazygit"
+method = "pacman"
+
+[[packages]]
+name = "man-db"
+method = "pacman"
+
+[[packages]]
+name = "man-pages"
+method = "pacman"
+
+[[packages]]
+name = "unzip"
+method = "pacman"
+
+[[packages]]
+name = "7zip"
 method = "pacman"
 
 # ─ net ──────────────────────────────────────
@@ -245,9 +317,33 @@ method = "pacman"
 name = "reflector"
 method = "pacman"
 
+[[packages]]
+name = "termshark"
+method = "pacman"
+
 # ─ system ───────────────────────────────────
 [[packages]]
-name = "timeshift"
+name = "linux"
+method = "pacman"
+
+[[packages]]
+name = "linux-headers"
+method = "pacman"
+
+[[packages]]
+name = "linux-lts"
+method = "pacman"
+
+[[packages]]
+name = "linux-lts-headers"
+method = "pacman"
+
+[[packages]]
+name = "linux-zen"
+method = "pacman"
+
+[[packages]]
+name = "linux-zen-headers"
 method = "pacman"
 
 [[packages]]
@@ -279,6 +375,10 @@ name = "cryptomator-bin"
 method = "paru"
 
 [[packages]]
+name = "systemctl-tui"
+method = "paru"
+
+[[packages]]
 name = "btrfs-assistant"
 method = "pacman"
 
@@ -286,11 +386,51 @@ method = "pacman"
 name = "compsize"
 method = "pacman"
 
-# ─ container infra ──────────────────────────
 [[packages]]
-name = "paru"
+name = "polkit"
+method = "pacman"
+
+[[packages]]
+name = "polkit-kde-agent"
+method = "pacman"
+
+[[packages]]
+name = "btrfsmaintenance"
+method = "pacman"
+
+[[packages]]
+name = "gsmartcontrol"
+method = "pacman"
+
+[[packages]]
+name = "lutris"
+method = "pacman"
+
+[[packages]]
+name = "waydroid"
+method = "pacman"
+
+[[packages]]
+name = "virtualbox"
+method = "pacman"
+
+[[packages]]
+name = "virtualbox-host-dkms"
 method = "paru"
 
+[[packages]]
+name = "kdiskmark"
+method = "pacman"
+
+[[packages]]
+name = "veracrypt"
+method = "pacman"
+
+[[packages]]
+name = "winboat-bin"
+method = "paru"
+
+# ─ container infra ──────────────────────────
 [[packages]]
 name = "crun"
 method = "pacman"
@@ -304,116 +444,25 @@ name = "podman-compose"
 method = "pacman"
 
 [[packages]]
+name = "podman-docker"
+method = "pacman"
+
+[[packages]]
 name = "distrobox"
 method = "pacman"
 
-# ═════════════════════════════════════════════
-# Container: arch-personal (AUR + 开发链)
-# ═════════════════════════════════════════════
-
-[[packages]]
-name = "lazygit"
-method = "container"
-container = "arch-personal"
-package_manager = "pacman"
-
-[[packages.exports]]
-kind = "bin"
-source = "/usr/bin/lazygit"
-
-[[packages]]
-name = "systemctl-tui"
-method = "container"
-container = "arch-personal"
-package_manager = "paru"
-
-[[packages.exports]]
-kind = "bin"
-source = "/usr/bin/systemctl-tui"
-
-[[packages]]
-name = "yazi"
-method = "container"
-container = "arch-personal"
-package_manager = "pacman"
-
-[[packages.exports]]
-kind = "bin"
-source = "/usr/bin/yazi"
-
 [[packages]]
 name = "lazydocker"
-method = "container"
-container = "arch-personal"
-package_manager = "paru"
+method = "paru"
 
-[[packages.exports]]
-kind = "bin"
-source = "/usr/bin/lazydocker"
-
-[[packages]]
-name = "nodejs"
-method = "container"
-container = "arch-personal"
-package_manager = "pacman"
-
-[[packages.exports]]
-kind = "bin"
-source = "/usr/bin/node"
-[[packages.exports]]
-kind = "bin"
-source = "/usr/bin/npm"
-[[packages.exports]]
-kind = "bin"
-source = "/usr/bin/npx"
-
-[[packages]]
-name = "python"
-method = "container"
-container = "arch-personal"
-package_manager = "pacman"
-
-[[packages.exports]]
-kind = "bin"
-source = "/usr/bin/python3"
-
-[[packages]]
-name = "python-pip"
-method = "container"
-container = "arch-personal"
-package_manager = "pacman"
-
-[[packages.exports]]
-kind = "bin"
-source = "/usr/bin/pip"
-
-[[packages]]
-name = "python-pipx"
-method = "container"
-container = "arch-personal"
-package_manager = "pacman"
-
-[[packages.exports]]
-kind = "bin"
-source = "/usr/bin/pipx"
-
-[[packages]]
-name = "gcc"
-method = "container"
-container = "arch-personal"
-package_manager = "pacman"
-
-[[packages.exports]]
-kind = "bin"
-source = "/usr/bin/gcc"
-[[packages.exports]]
-kind = "bin"
-source = "/usr/bin/g++"
+# ═════════════════════════════════════════════
+# Container: arch (AUR + GUI 应用)
+# ═════════════════════════════════════════════
 
 [[packages]]
 name = "localsend-bin"
 method = "container"
-container = "arch-personal"
+container = "arch"
 package_manager = "paru"
 
 [[packages.exports]]
@@ -423,7 +472,7 @@ source = "/usr/bin/localsend"
 [[packages]]
 name = "opencode"
 method = "container"
-container = "arch-personal"
+container = "arch"
 package_manager = "pacman"
 
 [[packages.exports]]
@@ -431,19 +480,9 @@ kind = "bin"
 source = "/usr/bin/opencode"
 
 [[packages]]
-name = "claude-code"
-method = "container"
-container = "arch-personal"
-package_manager = "paru"
-
-[[packages.exports]]
-kind = "bin"
-source = "/usr/bin/claude"
-
-[[packages]]
 name = "chromium"
 method = "container"
-container = "arch-personal"
+container = "arch"
 package_manager = "paru"
 
 [[packages.exports]]
@@ -456,17 +495,80 @@ source = "/usr/bin/chromium"
 [[packages]]
 name = "cc-switch-bin"
 method = "container"
-container = "arch-personal"
+container = "arch"
 package_manager = "paru"
 
+[[packages.exports]]
+kind = "app"
+source = "/usr/share/applications/CC Switch.desktop"
+
+[[packages]]
+name = "claude-code"
+method = "container"
+container = "arch"
+package_manager = "paru"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/claude"
+
+[[packages]]
+name = "motrix-next-bin"
+method = "container"
+container = "arch"
+package_manager = "paru"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/motrix-next"
+[[packages.exports]]
+kind = "app"
+source = "/usr/share/applications/MotrixNext.desktop"
+
+[[packages]]
+name = "qqmusic-bin"
+method = "container"
+container = "arch"
+package_manager = "paru"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/qqmusic"
+[[packages.exports]]
+kind = "app"
+source = "/usr/share/applications/qqmusic.desktop"
+
+[[packages]]
+name = "wechat-bin"
+method = "container"
+container = "arch"
+package_manager = "paru"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/wechat"
+[[packages.exports]]
+kind = "app"
+source = "/usr/share/applications/wechat.desktop"
+
+[[packages]]
+name = "mutagen.io-bin"
+method = "container"
+container = "arch"
+package_manager = "paru"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/mutagen"
+
 # ═════════════════════════════════════════════
-# Container: fedora-desktop (稳定桌面应用)
+# Container: fedora (桌面应用)
 # ═════════════════════════════════════════════
 
 [[packages]]
 name = "chromium"
 method = "container"
-container = "fedora-desktop"
+container = "fedora"
 package_manager = "dnf"
 
 [[packages.exports]]
@@ -477,19 +579,9 @@ kind = "bin"
 source = "/usr/bin/chromium-browser"
 
 [[packages]]
-name = "mpv"
-method = "container"
-container = "fedora-desktop"
-package_manager = "dnf"
-
-[[packages.exports]]
-kind = "bin"
-source = "/usr/bin/mpv"
-
-[[packages]]
 name = "keepassxc"
 method = "container"
-container = "fedora-desktop"
+container = "fedora"
 package_manager = "dnf"
 
 [[packages.exports]]
@@ -500,14 +592,54 @@ kind = "app"
 source = "/usr/share/applications/org.keepassxc.KeePassXC.desktop"
 
 [[packages]]
-name = "obs-studio"
+name = "libreoffice"
 method = "container"
-container = "fedora-desktop"
+container = "fedora"
 package_manager = "dnf"
 
 [[packages.exports]]
 kind = "bin"
-source = "/usr/bin/obs"
+source = "/usr/bin/libreoffice"
 [[packages.exports]]
 kind = "app"
-source = "/usr/share/applications/com.obsproject.Studio.desktop"
+source = "/usr/share/applications/libreoffice-startcenter.desktop"
+
+[[packages]]
+name = "okular"
+method = "container"
+container = "fedora"
+package_manager = "dnf"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/okular"
+[[packages.exports]]
+kind = "app"
+source = "/usr/share/applications/org.kde.okular.desktop"
+
+[[packages]]
+name = "ark"
+method = "container"
+container = "fedora"
+package_manager = "dnf"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/ark"
+[[packages.exports]]
+kind = "app"
+source = "/usr/share/applications/org.kde.ark.desktop"
+
+[[packages]]
+name = "qalculate-qt"
+method = "container"
+container = "fedora"
+package_manager = "dnf"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/qalculate-qt"
+[[packages.exports]]
+kind = "app"
+source = "/usr/share/applications/io.github.Qalculate.qalculate-qt.desktop"
+

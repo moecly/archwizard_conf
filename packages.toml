@@ -734,6 +734,20 @@ package_manager = "paru"
 kind = "app"
 source = "/usr/share/applications/chromium.desktop"
 
+[[packages]]
+name = "localsend-bin"
+description = "从 guest 容器导出的局域网传文件工具。"
+method = "container"
+container = "guest"
+package_manager = "paru"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/localsend"
+[[packages.exports]]
+kind = "app"
+source = "/usr/share/applications/localsend.desktop"
+
 # ═════════════════════════════════════════════
 # Container: fedora (桌面应用)
 # ═════════════════════════════════════════════

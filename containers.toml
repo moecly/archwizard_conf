@@ -1,19 +1,28 @@
+
 [[containers]]
-name = "arch"
+name = "arch-dev"
 image = "docker.io/library/archlinux:latest"
 package_managers = ["pacman", "paru"]
-home = "~/.archwizard/distrobox/homes/arch"
+home = "~/.archwizard/distrobox/homes/arch-dev"
 mirror = "china"
 
 [[containers]]
-name = "fedora"
-image = "registry.fedoraproject.org/fedora:latest"
-package_managers = ["dnf"]
-home = "~/.archwizard/distrobox/homes/fedora"
-mirror = "china"
-[[containers]]
-name = "guest"
+name = "arch-personal"
 image = "docker.io/library/archlinux:latest"
 package_managers = ["pacman", "paru"]
-home = "~/.archwizard/distrobox/homes/guest"
+home = "~/.archwizard/distrobox/homes/arch-personal"
+mirror = "china"
+
+[[containers]]
+name = "fedora-personal"
+image = "registry.fedoraproject.org/fedora:latest"
+package_managers = ["dnf"]
+home = "~/.archwizard/distrobox/homes/fedora-personal"
+mirror = "china"
+
+[[containers]]
+name = "arch-guest"
+image = "docker.io/library/archlinux:latest"
+package_managers = ["pacman", "paru"]
+home = "~/.archwizard/distrobox/homes/arch-guest"
 mirror = "china"

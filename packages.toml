@@ -567,15 +567,77 @@ name = "lazydocker"
 description = "容器工作流终端界面。"
 method = "paru"
 
+
+
+
 # ═════════════════════════════════════════════
-# Container: arch (AUR + GUI 应用)
+# Container: arch-dev (开发工具)
+# ═════════════════════════════════════════════
+
+[[packages]]
+name = "opencode"
+description = "从 arch-dev 容器导出的 OpenCode CLI。"
+method = "container"
+container = "arch-dev"
+package_manager = "pacman"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/opencode"
+
+[[packages]]
+name = "openai-codex"
+description = "从 arch-dev 容器导出的 Codex CLI。"
+method = "container"
+container = "arch-dev"
+package_manager = "pacman"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/codex"
+
+[[packages]]
+name = "claude-code"
+description = "从 arch-dev 容器导出的 Claude Code CLI。"
+method = "container"
+container = "arch-dev"
+package_manager = "paru"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/claude"
+
+[[packages]]
+name = "mutagen.io-bin"
+description = "从 arch-dev 容器导出的 Mutagen 文件同步 CLI。"
+method = "container"
+container = "arch-dev"
+package_manager = "paru"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/mutagen"
+
+[[packages]]
+name = "cc-switch-bin"
+description = "从 arch-dev 容器导出的 Cloudflare WARP 切换工具。"
+method = "container"
+container = "arch-dev"
+package_manager = "paru"
+
+[[packages.exports]]
+kind = "app"
+source = "/usr/share/applications/CC Switch.desktop"
+
+# ═════════════════════════════════════════════
+# Container: arch-personal (个人应用)
 # ═════════════════════════════════════════════
 
 [[packages]]
 name = "localsend-bin"
-description = "从 Arch 容器导出的局域网传文件工具。"
+description = "从 arch-personal 容器导出的局域网传文件工具。"
 method = "container"
-container = "arch"
+container = "arch-personal"
 package_manager = "paru"
 
 [[packages.exports]]
@@ -586,21 +648,10 @@ kind = "app"
 source = "/usr/share/applications/localsend.desktop"
 
 [[packages]]
-name = "opencode"
-description = "从 Arch 容器导出的 OpenCode CLI。"
-method = "container"
-container = "arch"
-package_manager = "pacman"
-
-[[packages.exports]]
-kind = "bin"
-source = "/usr/bin/opencode"
-
-[[packages]]
 name = "chromium"
-description = "从 Arch 容器导出的 Chromium 浏览器。"
+description = "从 arch-personal 容器导出的 Chromium 浏览器。"
 method = "container"
-container = "arch"
+container = "arch-personal"
 package_manager = "paru"
 
 [[packages.exports]]
@@ -611,43 +662,10 @@ kind = "bin"
 source = "/usr/bin/chromium"
 
 [[packages]]
-name = "cc-switch-bin"
-description = "从 Arch 容器导出的 Cloudflare WARP 切换工具。"
-method = "container"
-container = "arch"
-package_manager = "paru"
-
-[[packages.exports]]
-kind = "app"
-source = "/usr/share/applications/CC Switch.desktop"
-
-[[packages]]
-name = "openai-codex"
-description = "从 Arch 容器导出的 Codex CLI。"
-method = "container"
-container = "arch"
-package_manager = "pacman"
-
-[[packages.exports]]
-kind = "bin"
-source = "/usr/bin/codex"
-
-[[packages]]
-name = "claude-code"
-description = "从 Arch 容器导出的 Claude Code CLI。"
-method = "container"
-container = "arch"
-package_manager = "paru"
-
-[[packages.exports]]
-kind = "bin"
-source = "/usr/bin/claude"
-
-[[packages]]
 name = "motrix-next-bin"
-description = "从 Arch 容器导出的下载管理器。"
+description = "从 arch-personal 容器导出的下载管理器。"
 method = "container"
-container = "arch"
+container = "arch-personal"
 package_manager = "paru"
 
 [[packages.exports]]
@@ -659,9 +677,9 @@ source = "/usr/share/applications/MotrixNext.desktop"
 
 [[packages]]
 name = "qqmusic-bin"
-description = "从 Arch 容器导出的 QQ 音乐桌面应用。"
+description = "从 arch-personal 容器导出的 QQ 音乐桌面应用。"
 method = "container"
-container = "arch"
+container = "arch-personal"
 package_manager = "paru"
 
 [[packages.exports]]
@@ -673,9 +691,9 @@ source = "/usr/share/applications/qqmusic.desktop"
 
 [[packages]]
 name = "wechat-bin"
-description = "从 Arch 容器导出的微信桌面应用。"
+description = "从 arch-personal 容器导出的微信桌面应用。"
 method = "container"
-container = "arch"
+container = "arch-personal"
 package_manager = "paru"
 
 [[packages.exports]]
@@ -685,80 +703,26 @@ source = "/usr/bin/wechat"
 kind = "app"
 source = "/usr/share/applications/wechat.desktop"
 
-[[packages]]
-name = "mutagen.io-bin"
-description = "从 Arch 容器导出的 Mutagen 文件同步 CLI。"
-method = "container"
-container = "arch"
-package_manager = "paru"
-
-[[packages.exports]]
-kind = "bin"
-source = "/usr/bin/mutagen"
-
 # ═════════════════════════════════════════════
-# Container: guest (访客应用)
-# ═════════════════════════════════════════════
-
-[[packages]]
-name = "wechat-bin"
-description = "从 guest 容器导出的微信桌面应用。"
-method = "container"
-container = "guest"
-package_manager = "paru"
-
-[[packages.exports]]
-kind = "app"
-source = "/usr/share/applications/wechat.desktop"
-
-[[packages]]
-name = "chromium"
-description = "从 guest 容器导出的 Chromium 浏览器。"
-method = "container"
-container = "guest"
-package_manager = "paru"
-
-[[packages.exports]]
-kind = "app"
-source = "/usr/share/applications/chromium.desktop"
-
-[[packages]]
-name = "localsend-bin"
-description = "从 guest 容器导出的局域网传文件工具。"
-method = "container"
-container = "guest"
-package_manager = "paru"
-
-[[packages.exports]]
-kind = "bin"
-source = "/usr/bin/localsend"
-[[packages.exports]]
-kind = "app"
-source = "/usr/share/applications/localsend.desktop"
-
-# ═════════════════════════════════════════════
-# Container: fedora (桌面应用)
+# Container: fedora-personal (Fedora 桌面应用)
 # ═════════════════════════════════════════════
 
 [[packages]]
 name = "chromium"
-description = "从 Fedora 容器导出的 Chromium 浏览器。"
+description = "从 fedora-personal 容器导出的 Chromium 浏览器。"
 method = "container"
-container = "fedora"
+container = "fedora-personal"
 package_manager = "dnf"
 
 [[packages.exports]]
 kind = "app"
 source = "/usr/share/applications/chromium-browser.desktop"
-[[packages.exports]]
-kind = "bin"
-source = "/usr/bin/chromium-browser"
 
 [[packages]]
 name = "keepassxc"
-description = "从 Fedora 容器导出的密码管理器。"
+description = "从 fedora-personal 容器导出的密码管理器。"
 method = "container"
-container = "fedora"
+container = "fedora-personal"
 package_manager = "dnf"
 
 [[packages.exports]]
@@ -770,9 +734,9 @@ source = "/usr/share/applications/org.keepassxc.KeePassXC.desktop"
 
 [[packages]]
 name = "libreoffice"
-description = "从 Fedora 容器导出的办公套件。"
+description = "从 fedora-personal 容器导出的办公套件。"
 method = "container"
-container = "fedora"
+container = "fedora-personal"
 package_manager = "dnf"
 
 [[packages.exports]]
@@ -784,9 +748,9 @@ source = "/usr/share/applications/libreoffice-startcenter.desktop"
 
 [[packages]]
 name = "okular"
-description = "从 Fedora 容器导出的文档查看器。"
+description = "从 fedora-personal 容器导出的文档查看器。"
 method = "container"
-container = "fedora"
+container = "fedora-personal"
 package_manager = "dnf"
 
 [[packages.exports]]
@@ -798,9 +762,9 @@ source = "/usr/share/applications/org.kde.okular.desktop"
 
 [[packages]]
 name = "ark"
-description = "从 Fedora 容器导出的压缩包管理器。"
+description = "从 fedora-personal 容器导出的压缩包管理器。"
 method = "container"
-container = "fedora"
+container = "fedora-personal"
 package_manager = "dnf"
 
 [[packages.exports]]
@@ -812,9 +776,9 @@ source = "/usr/share/applications/org.kde.ark.desktop"
 
 [[packages]]
 name = "qalculate-qt"
-description = "从 Fedora 容器导出的计算器应用。"
+description = "从 fedora-personal 容器导出的计算器应用。"
 method = "container"
-container = "fedora"
+container = "fedora-personal"
 package_manager = "dnf"
 
 [[packages.exports]]
@@ -823,4 +787,41 @@ source = "/usr/bin/qalculate-qt"
 [[packages.exports]]
 kind = "app"
 source = "/usr/share/applications/io.github.Qalculate.qalculate-qt.desktop"
+
+# ═════════════════════════════════════════════
+# Container: arch-guest (访客隔离应用)
+# ═════════════════════════════════════════════
+
+[[packages]]
+name = "wechat-bin"
+description = "从 arch-guest 容器导出的微信桌面应用。"
+method = "container"
+container = "arch-guest"
+package_manager = "paru"
+
+[[packages.exports]]
+kind = "app"
+source = "/usr/share/applications/wechat.desktop"
+
+[[packages]]
+name = "chromium"
+description = "从 arch-guest 容器导出的 Chromium 浏览器。"
+method = "container"
+container = "arch-guest"
+package_manager = "paru"
+
+[[packages.exports]]
+kind = "app"
+source = "/usr/share/applications/chromium.desktop"
+
+[[packages]]
+name = "localsend-bin"
+description = "从 arch-guest 容器导出的局域网传文件工具。"
+method = "container"
+container = "arch-guest"
+package_manager = "paru"
+
+[[packages.exports]]
+kind = "app"
+source = "/usr/share/applications/localsend.desktop"
 

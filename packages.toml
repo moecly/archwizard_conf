@@ -576,7 +576,7 @@ method = "paru"
 
 [[packages]]
 name = "opencode"
-description = "从 arch-dev 容器导出的 OpenCode CLI。"
+description = "OpenCode CLI。"
 method = "container"
 container = "arch-dev"
 package_manager = "pacman"
@@ -587,7 +587,7 @@ source = "/usr/bin/opencode"
 
 [[packages]]
 name = "openai-codex"
-description = "从 arch-dev 容器导出的 Codex CLI。"
+description = "Codex CLI。"
 method = "container"
 container = "arch-dev"
 package_manager = "pacman"
@@ -598,7 +598,7 @@ source = "/usr/bin/codex"
 
 [[packages]]
 name = "claude-code"
-description = "从 arch-dev 容器导出的 Claude Code CLI。"
+description = "Claude Code CLI。"
 method = "container"
 container = "arch-dev"
 package_manager = "paru"
@@ -609,7 +609,7 @@ source = "/usr/bin/claude"
 
 [[packages]]
 name = "mutagen.io-bin"
-description = "从 arch-dev 容器导出的 Mutagen 文件同步 CLI。"
+description = "Mutagen 文件同步 CLI。"
 method = "container"
 container = "arch-dev"
 package_manager = "paru"
@@ -620,7 +620,7 @@ source = "/usr/bin/mutagen"
 
 [[packages]]
 name = "cc-switch-bin"
-description = "从 arch-dev 容器导出的 Cloudflare WARP 切换工具。"
+description = "Cloudflare WARP 切换工具。"
 method = "container"
 container = "arch-dev"
 package_manager = "paru"
@@ -629,9 +629,31 @@ package_manager = "paru"
 kind = "app"
 source = "/usr/share/applications/CC Switch.desktop"
 
+[[packages]]
+name = "bun"
+description = "JavaScript 运行时和工具链。"
+method = "container"
+container = "arch-dev"
+package_manager = "pacman"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/bun"
+
 # ═════════════════════════════════════════════
 # Container: arch-personal (个人应用)
 # ═════════════════════════════════════════════
+
+[[packages]]
+name = "telegram-desktop"
+description = "Telegram 桌面客户端。"
+method = "container"
+container = "arch-personal"
+package_manager = "pacman"
+
+[[packages.exports]]
+kind = "app"
+source = "/usr/share/applications/org.telegram.desktop.desktop"
 
 [[packages]]
 name = "localsend-bin"
@@ -649,7 +671,7 @@ source = "/usr/share/applications/localsend.desktop"
 
 [[packages]]
 name = "chromium"
-description = "从 arch-personal 容器导出的 Chromium 浏览器。"
+description = "Chromium 浏览器。"
 method = "container"
 container = "arch-personal"
 package_manager = "paru"
@@ -677,7 +699,7 @@ source = "/usr/share/applications/MotrixNext.desktop"
 
 [[packages]]
 name = "qqmusic-bin"
-description = "从 arch-personal 容器导出的 QQ 音乐桌面应用。"
+description = "QQ 音乐桌面应用。"
 method = "container"
 container = "arch-personal"
 package_manager = "paru"
@@ -709,7 +731,7 @@ source = "/usr/share/applications/wechat.desktop"
 
 [[packages]]
 name = "chromium"
-description = "从 fedora-personal 容器导出的 Chromium 浏览器。"
+description = "Chromium 浏览器。"
 method = "container"
 container = "fedora-personal"
 package_manager = "dnf"
@@ -805,7 +827,7 @@ source = "/usr/share/applications/wechat.desktop"
 
 [[packages]]
 name = "chromium"
-description = "从 arch-guest 容器导出的 Chromium 浏览器。"
+description = "Chromium 浏览器。"
 method = "container"
 container = "arch-guest"
 package_manager = "paru"

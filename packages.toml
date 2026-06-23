@@ -640,6 +640,17 @@ package_manager = "pacman"
 kind = "bin"
 source = "/usr/bin/bun"
 
+[[packages]]
+name = "nodejs"
+description = "Evented I/O for V8 javascript (Current 版本)。"
+method = "container"
+container = "arch-dev"
+package_manager = "pacman"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/node"
+
 # ═════════════════════════════════════════════
 # Container: arch-personal (个人应用)
 # ═════════════════════════════════════════════

@@ -668,7 +668,7 @@ source = "/usr/share/applications/org.telegram.desktop.desktop"
 
 [[packages]]
 name = "localsend-bin"
-description = "从 arch-personal 容器导出的局域网传文件工具。"
+description = "局域网传文件工具。"
 method = "container"
 container = "arch-personal"
 package_manager = "paru"
@@ -696,7 +696,7 @@ source = "/usr/bin/chromium"
 
 [[packages]]
 name = "motrix-next-bin"
-description = "从 arch-personal 容器导出的下载管理器。"
+description = "下载管理器。"
 method = "container"
 container = "arch-personal"
 package_manager = "paru"
@@ -724,7 +724,7 @@ source = "/usr/share/applications/qqmusic.desktop"
 
 [[packages]]
 name = "wechat-bin"
-description = "从 arch-personal 容器导出的微信桌面应用。"
+description = "微信桌面应用。"
 method = "container"
 container = "arch-personal"
 package_manager = "paru"
@@ -753,7 +753,7 @@ source = "/usr/share/applications/chromium-browser.desktop"
 
 [[packages]]
 name = "keepassxc"
-description = "从 fedora-personal 容器导出的密码管理器。"
+description = "密码管理器。"
 method = "container"
 container = "fedora-personal"
 package_manager = "dnf"
@@ -767,7 +767,7 @@ source = "/usr/share/applications/org.keepassxc.KeePassXC.desktop"
 
 [[packages]]
 name = "libreoffice"
-description = "从 fedora-personal 容器导出的办公套件。"
+description = "办公套件。"
 method = "container"
 container = "fedora-personal"
 package_manager = "dnf"
@@ -781,7 +781,7 @@ source = "/usr/share/applications/libreoffice-startcenter.desktop"
 
 [[packages]]
 name = "okular"
-description = "从 fedora-personal 容器导出的文档查看器。"
+description = "文档查看器。"
 method = "container"
 container = "fedora-personal"
 package_manager = "dnf"
@@ -795,7 +795,7 @@ source = "/usr/share/applications/org.kde.okular.desktop"
 
 [[packages]]
 name = "ark"
-description = "从 fedora-personal 容器导出的压缩包管理器。"
+description = "压缩包管理器。"
 method = "container"
 container = "fedora-personal"
 package_manager = "dnf"
@@ -809,7 +809,7 @@ source = "/usr/share/applications/org.kde.ark.desktop"
 
 [[packages]]
 name = "qalculate-qt"
-description = "从 fedora-personal 容器导出的计算器应用。"
+description = "计算器应用。"
 method = "container"
 container = "fedora-personal"
 package_manager = "dnf"
@@ -821,13 +821,24 @@ source = "/usr/bin/qalculate-qt"
 kind = "app"
 source = "/usr/share/applications/io.github.Qalculate.qalculate-qt.desktop"
 
+[[packages]]
+name = "qalc"
+description = "命令行计算器。"
+method = "container"
+container = "fedora-personal"
+package_manager = "dnf"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/qalc"
+
 # ═════════════════════════════════════════════
 # Container: arch-guest (访客隔离应用)
 # ═════════════════════════════════════════════
 
 [[packages]]
 name = "wechat-bin"
-description = "从 arch-guest 容器导出的微信桌面应用。"
+description = "微信桌面应用。"
 method = "container"
 container = "arch-guest"
 package_manager = "paru"
@@ -849,7 +860,7 @@ source = "/usr/share/applications/chromium.desktop"
 
 [[packages]]
 name = "localsend-bin"
-description = "从 arch-guest 容器导出的局域网传文件工具。"
+description = "局域网传文件工具。"
 method = "container"
 container = "arch-guest"
 package_manager = "paru"

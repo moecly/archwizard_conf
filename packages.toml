@@ -823,6 +823,7 @@ source = "/usr/share/applications/io.github.Qalculate.qalculate-qt.desktop"
 
 [[packages]]
 name = "qalc"
+package = "qalculate"
 description = "命令行计算器。"
 method = "container"
 container = "fedora-personal"

@@ -651,6 +651,20 @@ package_manager = "pacman"
 kind = "bin"
 source = "/usr/bin/node"
 
+[[packages]]
+name = "android-tools"
+description = "Android ADB 和 Fastboot 工具。"
+method = "container"
+container = "arch-dev"
+package_manager = "pacman"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/adb"
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/fastboot"
+
 # ═════════════════════════════════════════════
 # Container: arch-personal (个人应用)
 # ═════════════════════════════════════════════

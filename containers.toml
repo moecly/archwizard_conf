@@ -26,3 +26,10 @@ image = "docker.io/library/archlinux:latest"
 package_managers = ["pacman", "paru"]
 home = "~/.archwizard/distrobox/homes/arch-guest"
 mirror = "china"
+
+[[containers]]
+name = "arch-tmp"
+image = "docker.io/library/archlinux:latest"
+package_managers = ["pacman", "paru"]
+home = "~/.archwizard/distrobox/homes/arch-tmp"
+mirror = "china"

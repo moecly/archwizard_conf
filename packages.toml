@@ -760,6 +760,17 @@ source = "/usr/bin/wechat"
 kind = "app"
 source = "/usr/share/applications/wechat.desktop"
 
+[[packages]]
+name = "baidunetdisk-bin"
+description = "百度网盘 Linux 客户端。"
+method = "container"
+container = "arch-personal"
+package_manager = "paru"
+
+[[packages.exports]]
+kind = "app"
+source = "/usr/share/applications/baidunetdisk.desktop"
+
 # ═════════════════════════════════════════════
 # Container: fedora-personal (Fedora 桌面应用)
 # ═════════════════════════════════════════════

@@ -64,3 +64,7 @@ scope = "user"
 name = "podman.socket"
 action = "enable-start"
 scope = "user"
+
+[[services]]
+name = "xrdp.service"
+action = "enable-start"

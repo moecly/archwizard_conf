@@ -3,11 +3,6 @@ name = "keyd.service"
 action = "enable-start"
 
 [[services]]
-name = "dms.service"
-action = "enable-start"
-scope = "user"
-
-[[services]]
 name = "ufw.service"
 action = "enable-start"
 

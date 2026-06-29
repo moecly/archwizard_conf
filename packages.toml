@@ -400,6 +400,16 @@ name = "termshark"
 description = "终端里的抓包界面。"
 method = "pacman"
 
+[[packages]]
+name = "xrdp"
+description = "开源远程桌面协议(RDP)服务端。"
+method = "paru"
+
+[[packages]]
+name = "xorgxrdp"
+description = "xrdp 的 Xorg 驱动。"
+method = "paru"
+
 # ─ system ───────────────────────────────────
 [[packages]]
 name = "linux"
@@ -846,6 +856,20 @@ package_manager = "dnf"
 [[packages.exports]]
 kind = "bin"
 source = "/usr/bin/qalc"
+
+[[packages]]
+name = "remmina"
+description = "远程桌面客户端。"
+method = "container"
+container = "fedora-personal"
+package_manager = "dnf"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/remmina"
+[[packages.exports]]
+kind = "app"
+source = "/usr/share/applications/org.remmina.Remmina.desktop"
 
 # ═════════════════════════════════════════════
 # Container: arch-guest (访客隔离应用)

@@ -410,6 +410,16 @@ name = "xorgxrdp"
 description = "xrdp 的 Xorg 驱动。"
 method = "paru"
 
+[[packages]]
+name = "sunshine-bin"
+description = "Moonlight 的自托管游戏串流服务端。"
+method = "paru"
+
+[[packages]]
+name = "moonlight-qt"
+description = "Moonlight 游戏串流客户端。"
+method = "pacman"
+
 # ─ system ───────────────────────────────────
 [[packages]]
 name = "linux"

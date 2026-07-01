@@ -401,16 +401,6 @@ description = "终端里的抓包界面。"
 method = "pacman"
 
 [[packages]]
-name = "xrdp"
-description = "开源远程桌面协议(RDP)服务端。"
-method = "paru"
-
-[[packages]]
-name = "xorgxrdp"
-description = "xrdp 的 Xorg 驱动。"
-method = "paru"
-
-[[packages]]
 name = "sunshine-bin"
 description = "Moonlight 的自托管游戏串流服务端。"
 method = "paru"

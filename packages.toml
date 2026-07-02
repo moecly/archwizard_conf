@@ -902,7 +902,7 @@ name = "chromium"
 description = "Chromium 浏览器。"
 method = "container"
 container = "arch-guest"
-package_manager = "paru"
+package_manager = "pacman"
 
 [[packages.exports]]
 kind = "app"

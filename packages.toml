@@ -541,11 +541,6 @@ name = "veracrypt"
 description = "加密卷管理器。"
 method = "pacman"
 
-[[packages]]
-name = "winboat-bin"
-description = "Windows 兼容启动器。"
-method = "paru"
-
 # ─ container infra ──────────────────────────
 [[packages]]
 name = "crun"

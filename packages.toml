@@ -105,7 +105,7 @@ method = "pacman"
 [[packages]]
 name = "xwayland-satellite"
 description = "在 Wayland 会话里运行 Xwayland 应用。"
-method = "paru"
+method = "pacman"
 
 [[packages]]
 name = "wlogout"
@@ -479,7 +479,7 @@ method = "paru"
 [[packages]]
 name = "systemctl-tui"
 description = "systemd 终端界面。"
-method = "paru"
+method = "pacman"
 
 [[packages]]
 name = "btrfs-assistant"
@@ -709,7 +709,7 @@ name = "chromium"
 description = "Chromium 浏览器。"
 method = "container"
 container = "arch-personal"
-package_manager = "paru"
+package_manager = "pacman"
 
 [[packages.exports]]
 kind = "app"

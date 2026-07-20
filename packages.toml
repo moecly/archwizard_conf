@@ -877,6 +877,20 @@ source = "/usr/bin/remmina"
 kind = "app"
 source = "/usr/share/applications/org.remmina.Remmina.desktop"
 
+[[packages]]
+name = "qbittorrent"
+description = "BT 下载客户端。"
+method = "container"
+container = "fedora-personal"
+package_manager = "dnf"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/qbittorrent"
+[[packages.exports]]
+kind = "app"
+source = "/usr/share/applications/org.qbittorrent.qBittorrent.desktop"
+
 # ═════════════════════════════════════════════
 # Container: arch-guest (访客隔离应用)
 # ═════════════════════════════════════════════

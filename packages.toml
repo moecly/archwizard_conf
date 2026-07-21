@@ -878,18 +878,18 @@ kind = "app"
 source = "/usr/share/applications/org.remmina.Remmina.desktop"
 
 [[packages]]
-name = "qbittorrent"
-description = "BT 下载客户端。"
+name = "thunderbird"
+description = "Mozilla Thunderbird mail/newsgroup client"
 method = "container"
 container = "fedora-personal"
 package_manager = "dnf"
 
 [[packages.exports]]
 kind = "bin"
-source = "/usr/bin/qbittorrent"
+source = "/usr/bin/thunderbird"
 [[packages.exports]]
 kind = "app"
-source = "/usr/share/applications/org.qbittorrent.qBittorrent.desktop"
+source = "/usr/share/applications/net.thunderbird.Thunderbird.desktop"
 
 # ═════════════════════════════════════════════
 # Container: arch-guest (访客隔离应用)

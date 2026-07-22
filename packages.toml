@@ -572,7 +572,10 @@ name = "lazydocker"
 description = "容器工作流终端界面。"
 method = "paru"
 
-
+[[packages]]
+name = "bazaar"
+description = "GNOME 应用商店（专注于 Flatpak）。"
+method = "pacman"
 
 
 # ═════════════════════════════════════════════
@@ -771,6 +774,20 @@ source = "/usr/share/applications/baidunetdisk.desktop"
 # ═════════════════════════════════════════════
 
 [[packages]]
+name = "crow-translate"
+description = "翻译应用"
+method = "container"
+container = "fedora-personal"
+package_manager = "dnf"
+
+[[packages.exports]]
+kind = "bin"
+source = "/usr/bin/crow"
+[[packages.exports]]
+kind = "app"
+source = "/usr/share/applications/org.kde.CrowTranslate.desktop"
+
+[[packages]]
 name = "chromium"
 description = "Chromium 浏览器。"
 method = "container"
@@ -876,6 +893,7 @@ source = "/usr/bin/remmina"
 [[packages.exports]]
 kind = "app"
 source = "/usr/share/applications/org.remmina.Remmina.desktop"
+
 
 [[packages]]
 name = "thunderbird"

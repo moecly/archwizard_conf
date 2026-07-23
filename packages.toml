@@ -532,8 +532,9 @@ description = "TPM 模拟器，用于 virt-manager 虚拟机。"
 method = "pacman"
 
 [[packages]]
-name = "qemu-base"
-description = "QEMU 基础组件，用于 virt-manager 虚拟机。"
+name = "qemu-desktop"
+version = "11.0.2-4"
+description = "A QEMU setup for desktop environments"
 method = "pacman"
 
 [[packages]]

@@ -110,3 +110,12 @@ url = "git@github.com:moecly/dms-shell-config.git"
 source = "."
 target = "~/.config/DankMaterialShell"
 scope = "user"
+
+[[repos]]
+name = "env"
+url = "git@github.com:moecly/env-config.git"
+
+[[repos.links]]
+source = "."
+target = "~/.config/environment.d"
+scope = "user"

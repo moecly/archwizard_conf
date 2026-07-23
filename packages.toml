@@ -522,14 +522,19 @@ description = "Android 容器集成环境。"
 method = "pacman"
 
 [[packages]]
-name = "virtualbox"
-description = "桌面虚拟机宿主程序。"
+name = "virt-manager"
+description = "虚拟机管理器图形界面。"
 method = "pacman"
 
 [[packages]]
-name = "virtualbox-host-dkms"
-description = "VirtualBox 的 DKMS 宿主模块。"
-method = "paru"
+name = "swtpm"
+description = "TPM 模拟器，用于 virt-manager 虚拟机。"
+method = "pacman"
+
+[[packages]]
+name = "qemu-base"
+description = "QEMU 基础组件，用于 virt-manager 虚拟机。"
+method = "pacman"
 
 [[packages]]
 name = "kdiskmark"
